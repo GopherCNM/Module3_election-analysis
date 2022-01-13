@@ -65,6 +65,7 @@ with open(file_to_save, "w") as txt_file:
 
     # Determine the percentage of votes for each candidate by looping through the counts
     # Iterate through the candidate list
+    # Prior to adding write section, this was under "candidate_votes" calc, and left-justified (no space)
     for candidate_name in candidate_votes:
         # Retrieve vote count of a candidate
         votes = candidate_votes[candidate_name]
@@ -72,6 +73,9 @@ with open(file_to_save, "w") as txt_file:
         vote_percentage = float(votes) / float(total_votes) * 100
         # Print each candidate's name, vote count, and percentage of votes
         #print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        print (candidate_results)
+        txt_file.write(candidate_results)
 
         # Determine winning vote count and candidate
         # Determine if the votes are greater than the winning count
@@ -88,8 +92,9 @@ with open(file_to_save, "w") as txt_file:
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
-    #print(winning_candidate_summary)
-
+    print(winning_candidate_summary)
+    # Save the winning candidate's results to the text file
+    txt_file.write(winning_candidate_summary)
 
 # Print the total votes
 #code removed: print(total_votes)
