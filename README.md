@@ -9,7 +9,7 @@ The purpose of this analysis is to help two Colorado Board of Elections employee
 The following is a summary of the election results, and the supporting Python code.
 
 - How many votes were cast in this congressional election?
-369,711 votes were cast in this election.
+ 369,711 votes were cast in this election.
 ```
 total_votes = total_votes + 1
 ```
@@ -23,7 +23,7 @@ for county_name in county_votes:
 	county_vote_percentage = float(votes_by_county) / float(total_votes) * 100
 ```
 - Which county had the largest number of votes?
-Denver had the largest number of votes, with 306,055 of 369,711 (82.8%).
+ Denver had the largest number of votes, with 306,055 of 369,711 (82.8%).
 ```
 if (votes_by_county > largest_turnout):
 	largest_turnout = votes_by_county
@@ -39,7 +39,7 @@ for candidate_name in candidate_votes:
 	vote_percentage = float(votes) / float(total_votes) * 100
 ```
 - Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
-Diana DeGette won the election, with 272,892 of 369,711 (73.8%)
+ Diana DeGette won the election, with 272,892 of 369,711 (73.8%)
 ```
 if (votes > winning_count) and (vote_percentage > winning_percentage):
 	winning_count = votes
