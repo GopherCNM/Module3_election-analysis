@@ -47,6 +47,7 @@ if (votes > winning_count) and (vote_percentage > winning_percentage):
 	winning_percentage = vote_percentage
 ```
 **Final election results report**
+
 ![Election Report](/Resources/Election_Results_Report.PNG)
 
 ## Election-Audit Summary
