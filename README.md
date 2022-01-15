@@ -52,9 +52,9 @@ if (votes > winning_count) and (vote_percentage > winning_percentage):
 ## Election-Audit Summary
 
 I wrote this Python script in such a way that it can be leveraged for other future elections. This helps to automate this important task, and to add credibility and certainty to the process. Provided election results in a CSV file, this script can be tweaked slightly to read and report results with a few minor code modifications.
-- Update the election results source file name and file path as needed.
+- Update file names and paths for the election results source file and the results report to be written, as needed.  
 ![File Name & Path](/Resources/FilePath_FileName.PNG)
-- Confirm that source CSV files have header rows. If not, remove this code.
+- Confirm that source CSV file has header rows. If not, remove this code.  
 ![Header Row](/Resources/Read_Header_Row.PNG)
-- Confirm that columns in source CSV file are in the arranged in the same order. If not, this indexing will need to be adjusted to point to the correct columns.
+- Confirm that columns in source CSV file are in the arranged in the same order. If not, this indexing will need to be adjusted to point to the correct columns.  
 ![Indexes](/Resources/Candidate_County_Indexes.PNG)
